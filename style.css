@@ -1,64 +1,10 @@
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0d0d2b;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-header {
-    background: #111;
-    padding: 20px;
+.space-header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    background-size: cover;
+    color: white;
 }
 .logo {
-    width: 100px;
-}
-.catalog {
-    padding: 20px;
-}
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.product {
-    background-color: #1e1e3f;
-    border: 1px solid #333;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 15px;
-    width: 250px;
-}
-.product img {
-    width: 100%;
-    border-radius: 5px;
-}
-.form-section {
-    background-color: #1a1a2e;
-    padding: 20px;
-}
-form {
-    display: inline-block;
-    text-align: left;
-}
-form input, form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-}
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #3949ab;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: #303f9f;
-}
-footer {
-    background: #111;
-    padding: 10px;
+    max-width: 120px;
 }
