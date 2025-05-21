@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Space Hub Логотип" class="logo">
+        <h1>Добро пожаловать в Space Hub</h1>
+        <p>Город Карши, Узбекистан</p>
+    </header>
+
+    <section class="catalog">
+        <h2>Каталог товаров</h2>
+        <div class="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Товар 1">
+                <h3>Кулер для телефона</h3>
+                <p>Цена: 350 000 сум</p>
+                <button onclick="openForm('Кулер для телефона')">Заказать</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Товар 2">
+                <h3>Увлажнитель воздуха</h3>
+                <p>Цена: 200 000 сум</p>
+                <button onclick="openForm('Увлажнитель воздуха')">Заказать</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Товар 3">
+                <h3>Беспроводные наушники</h3>
+                <p>Цена: 150 000 сум</p>
+                <button onclick="openForm('Беспроводные наушники')">Заказать</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="form-section" style="display:none;">
+        <h2>Оформить заказ</h2>
+        <form action="https://formsubmit.co/Reydin888@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Новый заказ от клиента Space Hub">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" id="product-name" name="Товар">
+            <label>Имя:<br><input type="text" name="Имя" required></label><br>
+            <label>Телефон:<br><input type="text" name="Телефон" required></label><br>
+            <label>Комментарий:<br><textarea name="Комментарий"></textarea></label><br>
+            <button type="submit">Отправить</button>
+            <button type="button" onclick="closeForm()">Отмена</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Space Hub © 2025</p>
+    </footer>
+
+    <script>
+        function openForm(productName) {
+            document.getElementById('form-section').style.display = 'block';
+            document.getElementById('product-name').value = productName;
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        function closeForm() {
+            document.getElementById('form-section').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
